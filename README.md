@@ -34,4 +34,3 @@ git clone https://github.com/your-username/groovo.git
 cd groovo
 
 # Open index.html in your browser
-
