@@ -1,106 +1,96 @@
-/* Responsive Styles for Spotify Clone */
+/* Responsive styles for Groovo */
 
-/* Make body take full screen on smaller devices */
-body, html {
-  width: 100%;
-  overflow-x: hidden;
-}
-
-/* ========== GLOBAL RESPONSIVE ========== */
 @media (max-width: 768px) {
+  /* Hide header nav/buttons on small screens */
+  .header {
+    display: none;
+  }
+
+  /* Stack layout vertically */
   .container {
     flex-direction: column;
   }
 
-  .left, .right {
-    width: 100%;
-  }
-
+  /* Make left section (library) full width */
   .left {
-    display: none; /* Hide left panel (library) on mobile */
-  }
-
-  .playbar {
     width: 100%;
     padding: 10px;
   }
 
+  /* Ensure the library is scrollable */
+  .library {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+
+  /* Make right section full width */
+  .right {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Resize playlist cards */
   .cardContainer {
     justify-content: center;
-    padding: 10px;
     gap: 20px;
+    padding: 10px;
   }
 
   .card {
     width: 100%;
-    max-width: 300px;
-    margin: auto;
+    max-width: 280px;
+    margin: 0 auto;
   }
 
-  .header {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .header .buttons {
-    flex-direction: column;
-  }
-
-  .progress-container {
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  .footer {
-    font-size: 8px;
-    gap: 6px;
-  }
-
-  .songinfo {
+  /* Resize buttons for mobile */
+  .buttons button {
+    padding: 6px 12px;
     font-size: 14px;
   }
 
+  /* Resize images in playbar and songlist */
+  .playlib,
+  .musicimg,
   .songbuttons img {
-    width: 24px;
+    width: 30px;
+  }
+
+  /* Adjust playbar layout */
+  .playbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  /* Reduce song title font and fix spacing */
+  .song-title,
+  .block h6 {
+    font-size: 12px;
+    max-width: 120px;
+  }
+
+  /* Optional: hide footer links to save space */
+  .footer {
+    display: none;
+  }
+
+  /* Reduce artist list font */
+  .extras-heading {
+    font-size: 12px;
+  }
+
+  .extras-list li {
+    font-size: 11px;
+  }
+
+  /* Improve progress bar spacing */
+  .progress-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
   }
 
   .progress-bar {
     width: 100%;
   }
 }
-
-/* ========== SMALLER DEVICES (like phones) ========== */
-@media (max-width: 480px) {
-  .card h2 {
-    font-size: 14px;
-  }
-
-  .card p {
-    font-size: 12px;
-  }
-
-  .sign, .log {
-    font-size: 12px;
-    padding: 6px 12px;
-  }
-
-  .songbuttons img {
-    width: 20px;
-  }
-
-  .musicimg, .playlib {
-    width: 30px;
-  }
-
-  .block h6 {
-    font-size: 12px;
-    max-width: 100px;
-  }
-
-  .play-now {
-    font-size: 12px;
-  }
-}
-
-/* Optional: Add a toggle to open the left panel in mobile */
-/* You could add a hamburger menu in the header later */
