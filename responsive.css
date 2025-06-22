@@ -1,0 +1,106 @@
+/* Responsive Styles for Spotify Clone */
+
+/* Make body take full screen on smaller devices */
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ========== GLOBAL RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .left {
+    display: none; /* Hide left panel (library) on mobile */
+  }
+
+  .playbar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .cardContainer {
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header .buttons {
+    flex-direction: column;
+  }
+
+  .progress-container {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .footer {
+    font-size: 8px;
+    gap: 6px;
+  }
+
+  .songinfo {
+    font-size: 14px;
+  }
+
+  .songbuttons img {
+    width: 24px;
+  }
+
+  .progress-bar {
+    width: 100%;
+  }
+}
+
+/* ========== SMALLER DEVICES (like phones) ========== */
+@media (max-width: 480px) {
+  .card h2 {
+    font-size: 14px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .sign, .log {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .songbuttons img {
+    width: 20px;
+  }
+
+  .musicimg, .playlib {
+    width: 30px;
+  }
+
+  .block h6 {
+    font-size: 12px;
+    max-width: 100px;
+  }
+
+  .play-now {
+    font-size: 12px;
+  }
+}
+
+/* Optional: Add a toggle to open the left panel in mobile */
+/* You could add a hamburger menu in the header later */
