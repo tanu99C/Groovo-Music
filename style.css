@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.body{
+  background-color: black;
+  color: white;
+}
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+.left{
+  width: 25vw;
+  padding: 10px;
+
+
+
+}
+.playbar {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(8, 30, 8);
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.songinfo {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.songbuttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.songbuttons img {
+  width: 28px;
+  cursor: pointer;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  gap: 10px;
+  color: white;
+}
+
+.progress-bar {
+  flex: 1;
+  appearance: none;
+  height: 4px;
+  background: white;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.home ul li{
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  color: white;
+  padding-top: 14px;
+  font-weight: bold;
+
+}
+
+.homeicon{
+  width: 15px;
+  margin-bottom: 15px;
+  
+}
+
+.searchicon{
+  width: 15px;
+}
+
+
+
+
+.logo {
+  display: flex;
+  align-items: center;   
+  gap: 10px;              
+}
+
+.logo img {
+  height: 40px;           
+}
+
+.logo span {
+  font-weight: 800;       
+  font-size: 24px;        
+  color: white;           
+}
+
+.card.active {
+  border: 2px solid #1db954; /* Spotify green */
+  background-color: #282828;
+  box-shadow: 0 0 10px #1db954;
+}
+
+
+
+
+
+
+.right{
+  width: 75vw;
+  position: relative;
+  
+}
+
+.home{
+  padding: 20px;
+}
+
+
+.heading{
+  display: flex;
+  gap: 7px;
+  font-weight: bold;
+}
+
+
+.library {
+ height: 1000px;
+  position: relative;
+  display: flex;
+  flex-direction: column; 
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap; 
+  font-size: 10px;
+  gap: 13px;
+  margin-top: auto; 
+}
+
+.footer a {
+  color: gray;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.eng{
+  margin-top: 30px;
+}
+
+.add{
+  width: 16px;
+   padding-top: 5px;
+   margin-left: 170px;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #121212; 
+  border: 2px solid hotpink;
+  box-shadow: 0 0 15px hotpink;
+  border-radius: 10px;
+}
+
+
+.header > * {
+  padding: 16px 20px;
+}
+
+.nav img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+   
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.sign {
+  color: #a7a7a7;
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.buttons button:last-child {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 9999px; 
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.spotifyPlaylists{
+  padding: 16px;
+  
+}
+
+.playbar{
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(8, 30, 8);
+  width: 95%;
+  padding: 12px;
+}
+
+.cardContainer {
+  padding: 20px;
+}
+
+.card {
+  background-color: #121212;
+  border-radius: 8px;
+  padding: 16px;
+  width: 180px;
+  color: white;
+  font-family: sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.card h2 {
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 13px;
+  color: #b3b3b3;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 20px;
+}
+
+.extras {
+  color: white;
+  margin-top: 10px;
+  padding-left: 0px;
+    margin-left: 0px;
+}
+
+.extras-heading {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-left: 5px;
+}
+.extras-list {
+  list-style: none;
+  padding: 0;
+  margin-left: 5px; 
+}
+
+.extras-list li {
+  padding: 6px 5px;
+  font-size: 12px;
+  color: #b3b3b3;
+  text-align: left;
+}
+
+.extras-list li:hover {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+
+.sign:hover{
+  transform: scale(1.05);
+}
+
+.log:hover{
+  transform: scale(1.05);
+}
+
+.songbuttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+
+.songList ul{
+  padding: 14px 12px;
+  margin-top: 12px;
+  list-style: none;
+}
+
+.songList ul li{
+  display: flex;
+}
+
+
+.block {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  z-index: 1;
+  border: 2px solid white;
+  overflow: hidden;
+}
+
+
+.block::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  background: linear-gradient(120deg, transparent, hotpink, transparent);
+  background-size: 200% 200%;
+  animation: lightning 1s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.block:hover::before {
+  opacity: 1;
+}
+
+@keyframes lightning {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.block h6 {
+  
+ 
+  text-overflow: ellipsis;   /* Shows "..." at the end if text is too long */
+  max-width: 140px;          /* You can adjust this based on your layout */
+  display: inline-block;     /* Ensure the element behaves like a box */
+}
+
+
+
+
+
+
+.song-title {
+  flex: 1;                         /* Takes up remaining space */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  color: white;
+  margin: 0;
+}
+
+.play-section {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;                
+}
+
+.play-now {
+  margin: 0;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+
+.musicimg{
+  width: 40px;
+}
+
+.playlib{
+  width: 40px;
+}
