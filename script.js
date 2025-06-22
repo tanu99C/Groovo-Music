@@ -1,28 +1,32 @@
 console.log("lets write js");
 
 const songNameMap = {
-  "128-Victory Anthem - Khushi TDT 128 Kbps.mp3": "Victory Anthem - Khushi and Lashcurry",
-  "Adayein Teri (The Royals) (DjPunjab.Farm).mp3": "Adhayein Teri - Ruhh Joh",
+  "128-Victory Anthem - Khushi TDT 128 Kbps.mp3":
+    "Victory Anthem - Khushi and Lashcurry",
+  "Adayein Teri (The Royals) (DjPunjab.Farm).mp3": "Adayein Teri - Ruhh Joh",
   "Heat-Waves-Slowed-Reverb.mp3": "Heat Waves - Glass Animals",
   "Jhol Acoustic - PagalMass.mp3": "Jhol - Maanu",
   "Lover.mp3": "Lover - Diljit Dosanjh",
-  "The-Kid-LAROI-STAY-ft-Justin-Bieber-(HipHopKit.com).mp3": "Stay - Justin Bieber",
-
+  "The-Kid-LAROI-STAY-ft-Justin-Bieber-(HipHopKit.com).mp3":
+    "Stay - Justin Bieber",
 
   //card1
   "128-Born to Shine - GOAT 128 Kbps.mp3": "Born To Shine - GOAT",
-  "128-Chor Bazari Phir Se - Bhool Chuk Maaf 128 Kbps.mp3": "Chor Bazaari Phir Se",
+  "128-Chor Bazari Phir Se - Bhool Chuk Maaf 128 Kbps.mp3":
+    "Chor Bazaari Phir Se",
   "128-Halki Halki Si - Asees Kaur 128 Kbps.mp3": "Halki Halki Si",
 
-
-   //card2
+  //card2
   "128-Ishq Mein - Nadaaniyan 128 Kbps.mp3": "Ishq Mein",
-  "128-Mere Mehboob Mere Sanam - Bad Newz 128 Kbps.mp3": "Mere Mehboob Mere Sanam",
+  "128-Mere Mehboob Mere Sanam - Bad Newz 128 Kbps.mp3":
+    "Mere Mehboob Mere Sanam",
   "128-Nasha - Raid 2 128 Kbps.mp3": "Nasha",
 
   //card3
-  "Ae Zindagi Gale Laga Le (take, 1) Dear Zindagi 128 Kbps (3).mp3": "Ae Zindagi Gale Laga Le",
-  "Beech Beech Mein Jab Harry Met Sejal (original Motion Picturetrack) 128 Kbps.mp3": "Beech Beech Mein",
+  "Ae Zindagi Gale Laga Le (take, 1) Dear Zindagi 128 Kbps (3).mp3":
+    "Ae Zindagi Gale Laga Le",
+  "Beech Beech Mein Jab Harry Met Sejal (original Motion Picturetrack) 128 Kbps.mp3":
+    "Beech Beech Mein",
   "Blue Hai Paani Paani Yaariyan 2 128 Kbps.mp3": "Blue Hai Paani Paani",
 
   //card4
@@ -35,15 +39,13 @@ const songNameMap = {
   "Girl I Need You Baaghi 128 Kbps.mp3": "Girl I Need You",
   "Haan Main Galat Love Aaj Kal 128 Kbps.mp3": "Haan Main Galat",
 
-
- // Card 6
-"Hardum Humdum (film Version) Ludo 128 Kbps.mp3": "Hardum Humdum",
-"Ho Ja Mast Malang Tu Malang Unleash The Madness 128 Kbps.mp3": "Malang",
-"Hum Nashe Mein Toh Nahin Bhool Bhulaiyaa 2 128 Kbps.mp3": "Hum Nashe Mein Toh Nahin"
-,
-
- // Card 7
-"Itni Si Baat Hain Azhar 128 Kbps.mp3": "Itni Si Baat Hain",
+  // Card 6
+  "Hardum Humdum (film Version) Ludo 128 Kbps.mp3": "Hardum Humdum",
+  "Ho Ja Mast Malang Tu Malang Unleash The Madness 128 Kbps.mp3": "Malang",
+  "Hum Nashe Mein Toh Nahin Bhool Bhulaiyaa 2 128 Kbps.mp3":
+    "Hum Nashe Mein Toh Nahin",
+  // Card 7
+  "Itni Si Baat Hain Azhar 128 Kbps.mp3": "Itni Si Baat Hain",
   "Kasturi Amar Prem Ki Prem Kahani 128 Kbps.mp3": "Kasturi",
   "Kesariya Brahmastra 128 Kbps.mp3": "Kesariya",
 
@@ -72,81 +74,71 @@ const playlistMap = {
   "Happy Hits!": [
     "cardssongs/128-Born to Shine - GOAT 128 Kbps.mp3",
     "cardssongs/128-Chor Bazari Phir Se - Bhool Chuk Maaf 128 Kbps.mp3",
-    "cardssongs/Halki Halki Si - Asees Kaur 128 Kbps.mp3"
+    "cardssongs/Halki Halki Si - Asees Kaur 128 Kbps.mp3",
   ],
   "Lofi Chill!": [
     "cardssongs/128-Ishq Mein - Nadaaniyan 128 Kbps.mp3",
     "cardssongs/128-Mere Mehboob Mere Sanam - Bad Newz 128 Kbps.mp3",
-    "cardssongs/128-Nasha - Raid 2 128 Kbps.mp3"
+    "cardssongs/128-Nasha - Raid 2 128 Kbps.mp3",
   ],
   "Fun Friday!": [
     "cardssongs/Ae Zindagi Gale Laga Le (take, 1) Dear Zindagi 128 Kbps (3).mp3",
     "cardssongs/Beech Beech Mein Jab Harry Met Sejal (original Motion Picturetrack) 128 Kbps.mp3",
-    "cardssongs/Blue Hai Paani Paani Yaariyan 2 128 Kbps.mp3"
+    "cardssongs/Blue Hai Paani Paani Yaariyan 2 128 Kbps.mp3",
   ],
   "Viral Hits!": [
     "cardssongs/Chaleya Jawan 128 Kbps.mp3",
     "cardssongs/Dance Ka Bhoot Brahmastra 128 Kbps.mp3",
-    "cardssongs/Deva Deva Brahmastra Tamil 128 Kbps.mp3"
+    "cardssongs/Deva Deva Brahmastra Tamil 128 Kbps.mp3",
   ],
   "Cozy Christmas Jazz!": [
     "cardssongs/Dil Ko Maine Di Kasam Arijit Singh 128 Kbps.mp3",
     "cardssongs/Girl I Need You Baaghi 128 Kbps.mp3",
-    "cardssongs/Haan Main Galat Love Aaj Kal 128 Kbps.mp3"
+    "cardssongs/Haan Main Galat Love Aaj Kal 128 Kbps.mp3",
   ],
   "Hip Hop Hits!": [
     "cardssongs/Hardum Humdum (film Version) Ludo 128 Kbps.mp3",
     "cardssongs/Ho Ja Mast Malang Tu Malang Unleash The Madness 128 Kbps.mp3",
-    "cardssongs/Hum Nashe Mein Toh Nahin Bhool Bhulaiyaa 2 128 Kbps.mp3"
+    "cardssongs/Hum Nashe Mein Toh Nahin Bhool Bhulaiyaa 2 128 Kbps.mp3",
   ],
   "Female Chart Toppers!": [
     "cardssongs/Itni Si Baat Hain Azhar 128 Kbps.mp3.mp3",
     "cardssongs/Kasturi Amar Prem Ki Prem Kahani 128 Kbps.mp3.mp3",
-    "cardssongs/Kesariya Brahmastra 128 Kbps.mp3.mp3"
+    "cardssongs/Kesariya Brahmastra 128 Kbps.mp3.mp3",
   ],
   "Lounge- Soft House": [
     "cardssongs/Laal Ishq Goliyon Ki Raasleela Ram Leela 128 Kbps.mp3",
     "cardssongs/Luv Ju Bunty Aur Babli 2 128 Kbps.mp3",
     "cardssongs/Mann Jogiya Pyaar Hai Toh Hai 128 Kbps.mp3",
-
   ],
   "90s Swagger": [
     "cardssongs/Mere Yaraa Sooryavanshi 128 Kbps.mp3",
     "cardssongs/Nashe Si Chadh Gayi Befikre 128 Kbps.mp3",
-    "cardssongs/Palat Tera Hero Idhar Hai Main Tera Hero 128 Kbps.mp3"
+    "cardssongs/Palat Tera Hero Idhar Hai Main Tera Hero 128 Kbps.mp3",
   ],
   "Rock Classics!": [
     "cardssongs/Pasoori Nu Satyaprem Ki Katha 128 Kbps.mp3",
     "cardssongs/Rangdaari Lucknow Central 128 Kbps.mp3",
-    "cardssongs/Sajde Kill Dil 128 Kbps.mp3"
+    "cardssongs/Sajde Kill Dil 128 Kbps.mp3",
   ],
   "Beats to think to": [
     "cardssongs/Tu Hi Hai Dear Zindagi 128 Kbps.mp3",
     "cardssongs/Valam Made In China 128 Kbps.mp3",
-    "cardssongs/Yaariyan Reprise Cocktail 128 Kbps.mp3"
-  ]
+    "cardssongs/Yaariyan Reprise Cocktail 128 Kbps.mp3",
+  ],
 };
 
-
 async function getSongs() {
-  let a = await fetch("http://127.0.0.1:3000/songs/");
-  let response = await a.text();
-
-  let div = document.createElement("div");
-  div.innerHTML = response;
-
-  let as = div.getElementsByTagName("a");
-  let songs = [];
-
-  for (let i = 0; i < as.length; i++) {
-    const element = as[i];
-    if (element.href.endsWith(".mp3")) {
-      songs.push(element.href);
-    }
-  }
-
-  return songs;
+  return [
+    "songs/128-Victory Anthem - Khushi TDT 128 Kbps.mp3",
+    "songs/Adayein Teri (The Royals) (DjPunjab.Farm).mp3",
+    "songs/Heat-Waves-Slowed-Reverb.mp3",
+    "songs/Jhol Acoustic - PagalMass.mp3",
+    "songs/Lover.mp3",
+    "songs/The-Kid-LAROI-STAY-ft-Justin-Bieber-(HipHopKit.com).mp3"
+  ];
 }
+
 
 let audio = new Audio();
 
@@ -156,10 +148,8 @@ audio.addEventListener("ended", () => {
   }
 });
 
-
 let currentPlaylist = [];
 let currentIndex = 0;
-
 
 function playSongAt(index) {
   if (index >= 0 && index < currentPlaylist.length) {
@@ -167,7 +157,8 @@ function playSongAt(index) {
     audio.play();
     currentIndex = index;
 
-    const name = songNameMap[currentPlaylist[index].split("/").pop()] || "Playing...";
+    const name =
+      songNameMap[currentPlaylist[index].split("/").pop()] || "Playing...";
     document.querySelector(".songinfo").textContent = name;
 
     audio.addEventListener("loadedmetadata", () => {
@@ -180,7 +171,7 @@ function playSongAt(index) {
 function formatTime(seconds) {
   const mins = Math.floor(seconds / 60);
   const secs = Math.floor(seconds % 60);
-  return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+  return `${mins}:${secs < 10 ? "0" : ""}${secs}`;
 }
 
 audio.addEventListener("timeupdate", () => {
@@ -197,7 +188,6 @@ audio.addEventListener("timeupdate", () => {
 document.querySelector(".progress-bar").addEventListener("input", (e) => {
   audio.currentTime = e.target.value;
 });
-
 
 let currentSongUrl = "";
 
@@ -231,12 +221,15 @@ async function main() {
           if (!audio.paused) {
             audio.pause();
             console.log("Paused:", url);
+            playIcon.src = "play.svg";
           } else {
             audio.play();
             console.log("Resumed:", url);
+            playIcon.src = "pause.svg";
           }
         } else {
           playSong(url);
+          playIcon.src = "pause.svg";
         }
       });
     }
@@ -247,19 +240,30 @@ function playSong(url) {
   audio.src = url;
   audio.play();
   currentSongUrl = url;
-  console.log("Playing:", url);
+
+  // Reset all icons
+  document.querySelectorAll(".playlib").forEach(icon => icon.src = "play.svg");
+
+  // Set current to pause icon
+  const currentLi = [...document.querySelectorAll(".songList ul li")].find(li => li.dataset.url === url);
+  if (currentLi) {
+    currentLi.querySelector(".playlib").src = "pause.svg";
+  }
 
   audio.addEventListener("loadeddata", () => {
     console.log("Duration:", audio.duration);
   });
 }
 
+
 main();
 
-document.querySelectorAll(".card").forEach(card => {
+document.querySelectorAll(".card").forEach((card) => {
   card.addEventListener("click", () => {
     // Remove highlight from all cards
-    document.querySelectorAll(".card").forEach(c => c.classList.remove("active"));
+    document
+      .querySelectorAll(".card")
+      .forEach((c) => c.classList.remove("active"));
 
     // Highlight the clicked card
     card.classList.add("active");
@@ -274,12 +278,13 @@ document.querySelectorAll(".card").forEach(card => {
   });
 });
 
-
-document.querySelector(".songbuttons img[src='back.svg']").addEventListener("click", () => {
-  if (currentIndex > 0) {
-    playSongAt(currentIndex - 1);
-  }
-});
+document
+  .querySelector(".songbuttons img[src='back.svg']")
+  .addEventListener("click", () => {
+    if (currentIndex > 0) {
+      playSongAt(currentIndex - 1);
+    }
+  });
 
 const playBtn = document.querySelector(".songbuttons img[src='play.svg']");
 playBtn.addEventListener("click", () => {
@@ -290,8 +295,10 @@ playBtn.addEventListener("click", () => {
   }
 });
 
-document.querySelector(".songbuttons img[src='forward.svg']").addEventListener("click", () => {
-  if (currentIndex < currentPlaylist.length - 1) {
-    playSongAt(currentIndex + 1);
-  }
-});
+document
+  .querySelector(".songbuttons img[src='forward.svg']")
+  .addEventListener("click", () => {
+    if (currentIndex < currentPlaylist.length - 1) {
+      playSongAt(currentIndex + 1);
+    }
+  });
