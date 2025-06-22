@@ -102,9 +102,9 @@ const playlistMap = {
     "cardssongs/Hum Nashe Mein Toh Nahin Bhool Bhulaiyaa 2 128 Kbps.mp3",
   ],
   "Female Chart Toppers!": [
-    "cardssongs/Itni Si Baat Hain Azhar 128 Kbps.mp3.mp3",
-    "cardssongs/Kasturi Amar Prem Ki Prem Kahani 128 Kbps.mp3.mp3",
-    "cardssongs/Kesariya Brahmastra 128 Kbps.mp3.mp3",
+    "cardssongs/Itni Si Baat Hain Azhar 128 Kbps.mp3",
+    "cardssongs/Kasturi Amar Prem Ki Prem Kahani 128 Kbps.mp3",
+    "cardssongs/Kesariya Brahmastra 128 Kbps.mp3",
   ],
   "Lounge- Soft House": [
     "cardssongs/Laal Ishq Goliyon Ki Raasleela Ram Leela 128 Kbps.mp3",
@@ -143,10 +143,16 @@ async function getSongs() {
 let audio = new Audio();
 
 audio.addEventListener("ended", () => {
-  if (currentIndex < currentPlaylist.length - 1) {
+  if (currentPlaylist.length > 0 && currentIndex < currentPlaylist.length - 1) {
     playSongAt(currentIndex + 1);
+  } else {
+    // ✅ Reset icon if top 6 or playlist ends
+    document.getElementById("mainPlayBtn").src = "play.svg";
   }
 });
+
+
+
 
 let currentPlaylist = [];
 let currentIndex = 0;
@@ -155,6 +161,8 @@ function playSongAt(index) {
   if (index >= 0 && index < currentPlaylist.length) {
     audio.src = currentPlaylist[index];
     audio.play();
+    document.getElementById("mainPlayBtn").src = "pause.svg";
+
     currentIndex = index;
 
     const name =
@@ -239,22 +247,34 @@ async function main() {
 function playSong(url) {
   audio.src = url;
   audio.play();
+  document.getElementById("mainPlayBtn").src = "pause.svg";
+
   currentSongUrl = url;
+
+    currentPlaylist = [];
+    currentIndex = 0;
+
+  // ✅ Set bottom bar song name
+  const fileName = decodeURIComponent(url.split("/").pop());
+  const name = songNameMap[fileName] || "Playing...";
+  document.querySelector(".songinfo").textContent = name;
 
   // Reset all icons
   document.querySelectorAll(".playlib").forEach(icon => icon.src = "play.svg");
 
   // Set current to pause icon
-  const currentLi = [...document.querySelectorAll(".songList ul li")].find(li => li.dataset.url === url);
+  const currentLi = [...document.querySelectorAll(".songList ul li")]
+    .find(li => li.dataset.url === url);
   if (currentLi) {
     currentLi.querySelector(".playlib").src = "pause.svg";
   }
 
   audio.addEventListener("loadeddata", () => {
     console.log("Duration:", audio.duration);
+    const duration = formatTime(audio.duration);
+    document.querySelector(".total-duration").textContent = duration;
   });
 }
-
 
 main();
 
@@ -286,14 +306,18 @@ document
     }
   });
 
-const playBtn = document.querySelector(".songbuttons img[src='play.svg']");
-playBtn.addEventListener("click", () => {
+const mainPlayBtn = document.getElementById("mainPlayBtn");
+
+mainPlayBtn.addEventListener("click", () => {
   if (audio.paused) {
     audio.play();
+    mainPlayBtn.src = "pause.svg";
   } else {
     audio.pause();
+    mainPlayBtn.src = "play.svg";
   }
 });
+
 
 document
   .querySelector(".songbuttons img[src='forward.svg']")
